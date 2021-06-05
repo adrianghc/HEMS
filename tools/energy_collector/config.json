@@ -1,0 +1,13 @@
+{
+    "id": "id",
+    "email_from": "",
+    "email_to": "",
+    "email_pass": "***",
+    "email_server": "",
+    "email_port": 587,
+    "fritz_ip": "",
+    "fritz_user": "",
+    "fritz_pass": "***",
+    "switch_id": 16,
+    "switch_ain": ""
+}

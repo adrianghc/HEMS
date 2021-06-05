@@ -1,0 +1,9 @@
+.vscode/settings.json
+.vscode/tags
+.vscode/.ropeproject/objectdb
+build/
+tests/build/
+**/__pycache__
+**/*.db
+**/log.txt
+data/**/*.npy

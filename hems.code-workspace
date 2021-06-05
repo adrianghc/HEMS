@@ -1,0 +1,42 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.h": "cpp",
+			"*.c": "c",
+			"*.cpp": "cpp"
+		},
+		"[c]": {
+			"editor.rulers": [
+				100,
+				140
+			]
+		},
+		"[cpp]": {
+			"editor.rulers": [
+				100,
+				140
+			]
+		},
+		"[python]": {
+			"editor.rulers": [
+				100,
+				140
+			]
+		},
+		"[makefile]": {
+			"editor.rulers": [
+				100,
+				140
+			]
+		},
+		"C_Cpp.autoAddFileAssociations": false,
+		"search.exclude": {
+			"**/sqlite": true
+		}
+	}
+}

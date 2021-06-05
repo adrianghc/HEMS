@@ -1,0 +1,385 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "make all",
+            "type": "shell",
+            "command": "make all",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "make all (debug)",
+            "type": "shell",
+            "command": "make all debug=yes",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make clean",
+            "type": "shell",
+            "command": "make clean",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make launcher",
+            "type": "shell",
+            "command": "make launcher",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make launcher (debug)",
+            "type": "shell",
+            "command": "make launcher debug=yes",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make automation",
+            "type": "shell",
+            "command": "make automation",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make automation (debug)",
+            "type": "shell",
+            "command": "make automation debug=yes",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make collection",
+            "type": "shell",
+            "command": "make collection",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make collection (debug)",
+            "type": "shell",
+            "command": "make collection debug=yes",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make inference",
+            "type": "shell",
+            "command": "make inference",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make inference (debug)",
+            "type": "shell",
+            "command": "make inference debug=yes",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make storage",
+            "type": "shell",
+            "command": "make storage",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make storage (debug)",
+            "type": "shell",
+            "command": "make storage debug=yes",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make training",
+            "type": "shell",
+            "command": "make training",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make training (debug)",
+            "type": "shell",
+            "command": "make training debug=yes",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make ui",
+            "type": "shell",
+            "command": "make ui",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make ui (debug)",
+            "type": "shell",
+            "command": "make ui debug=yes",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make all (arm)",
+            "type": "shell",
+            "command": "make all arch=arm",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make clean (arm)",
+            "type": "shell",
+            "command": "make clean arch=arm",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make launcher (arm)",
+            "type": "shell",
+            "command": "make launcher arch=arm",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make automation (arm)",
+            "type": "shell",
+            "command": "make automation arch=arm",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make collection (arm)",
+            "type": "shell",
+            "command": "make collection arch=arm",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make inference (arm)",
+            "type": "shell",
+            "command": "make inference arch=arm",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make storage (arm)",
+            "type": "shell",
+            "command": "make storage arch=arm",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make training (arm)",
+            "type": "shell",
+            "command": "make training arch=arm",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make ui (arm)",
+            "type": "shell",
+            "command": "make ui arch=arm",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "TEST: make all",
+            "type": "shell",
+            "command": "cd tests; make all",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "TEST: run all",
+            "type": "shell",
+            "command": "cd tests; chmod u+x run_all_tests.sh; ./run_all_tests.sh",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "TEST: make clean",
+            "type": "shell",
+            "command": "cd tests; make clean",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "TEST: make common",
+            "type": "shell",
+            "command": "cd tests; make common",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "TEST: run common: 'Messenger test'",
+            "type": "shell",
+            "command": "cd tests/build/native/tests/common; ./test_messenger",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "TEST: run common: 'Settings test'",
+            "type": "shell",
+            "command": "cd tests/build/native/tests/common; ./test_settings",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "TEST: run common: 'Types test'",
+            "type": "shell",
+            "command": "cd tests/build/native/tests/common; ./test_types",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "TEST: make launcher",
+            "type": "shell",
+            "command": "cd tests; make launcher",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "TEST: run launcher: 'Message queue test' + 'Module watcher test'",
+            "type": "shell",
+            "command": "cd tests/build/native/tests/launcher; ./test_launcher",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "TEST: run launcher: 'Local logger test'",
+            "type": "shell",
+            "command": "cd tests/build/native/tests/launcher; ./test_local_logger",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "TEST: make storage",
+            "type": "shell",
+            "command": "cd tests; make storage",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "TEST: run storage: 'Database creation test'",
+            "type": "shell",
+            "command": "cd tests/build/native/tests/storage; ./test_storage",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "TEST: run storage: 'Message handler test (SETTINGS)'",
+            "type": "shell",
+            "command": "cd tests/build/native/tests/storage; ./test_handler_settings",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "TEST: run storage: 'Message handler test (MSG_SET)'",
+            "type": "shell",
+            "command": "cd tests/build/native/tests/storage; ./test_handler_msg_set",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "TEST: run storage: 'Message handler test (MSG_DEL)'",
+            "type": "shell",
+            "command": "cd tests/build/native/tests/storage; ./test_handler_msg_del",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "TEST: run storage: 'Message handler test (MSG_GET)'",
+            "type": "shell",
+            "command": "cd tests/build/native/tests/storage; ./test_handler_msg_get",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "TEST: make collection",
+            "type": "shell",
+            "command": "cd tests; make collection",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "TEST: run collection: 'Data download test'",
+            "type": "shell",
+            "command": "cd tests/build/native/tests; chmod u+x collection/energy_production_provider/run.sh; chmod u+x collection/weather_provider/run.sh; ./collection/test_download_data",
+            "problemMatcher": [],
+            "group": "test"
+        }
+    ]
+}

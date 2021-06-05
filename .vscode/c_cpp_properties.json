@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "ARM",
+            "includePath": [
+                // "/PATH/TO/COMPILED/BOOST",
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/include/sqlite"
+            ],
+            "defines": [],
+            // "compilerPath": "/PATH/TO/arm-linux-gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "gcc-arm"
+        },
+        {
+            "name": "Native",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/include/sqlite"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

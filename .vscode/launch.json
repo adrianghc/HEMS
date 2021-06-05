@@ -1,0 +1,551 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "launcher (native)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/native/hems/launcher",
+            "args": [
+                "--debug"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/native/hems",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "1_modules",
+                "order": 1
+            }
+        },
+        {
+            "name": "storage (native)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/native/hems/storage",
+            "args": [
+                "--debug"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/native/hems",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "1_modules",
+                "order": 2
+            }
+        },
+        {
+            "name": "collection (native)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/native/hems/collection",
+            "args": [
+                "--debug"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/native/hems",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "1_modules",
+                "order": 3
+            }
+        },
+        {
+            "name": "automation (native)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/native/hems/automation",
+            "args": [
+                "--debug"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/native/hems",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "1_modules",
+                "order": 4
+            }
+        },
+        {
+            "name": "inference (native)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/native/hems/inference",
+            "args": [
+                "--debug"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/native/hems",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "1_modules",
+                "order": 5
+            }
+        },
+        {
+            "name": "training (native)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/native/hems/training",
+            "args": [
+                "--debug"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/native/hems",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "1_modules",
+                "order": 6
+            }
+        },
+        {
+            "name": "ui (native)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/native/hems/ui",
+            "args": [
+                "--debug"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/native/hems",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "1_modules",
+                "order": 7
+            }
+        },
+        {
+            "name": "Energy production provider",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "cwd": "${workspaceFolder}/tools/energy_production_provider",
+            "env": {
+                "FLASK_APP": "tools/energy_production_provider/energy_production_provider.py",
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "0",
+                "LOCATION": "wijchen",
+                "DATAPATH": "${workspaceFolder}/data"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "-p 2020"
+            ],
+            "jinja": true,
+            "presentation": {
+                "hidden": false,
+                "group": "2_tools",
+                "order": 1
+            }
+        },
+        {
+            "name": "Weather provider",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "cwd": "${workspaceFolder}/tools/weather_provider",
+            "env": {
+                "FLASK_APP": "tools/weather_provider/weather_provider.py",
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "0",
+                "LOCATION": "wijchen",
+                "DATAPATH": "${workspaceFolder}/data"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "-p 2022"
+            ],
+            "jinja": true,
+            "presentation": {
+                "hidden": false,
+                "group": "2_tools",
+                "order": 2
+            }
+        },
+        {
+            "name": "Energy production model interface",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "cwd": "${workspaceFolder}/tools/energy_production_model_if",
+            "env": {
+                "FLASK_APP": "tools/energy_production_model_if/energy_production_model_if.py",
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "0",
+                "LOCATION": "wijchen",
+                "MODEL": "${workspaceFolder}/models/30d-all12-wijchen-[lr].pkl"
+                // "MODEL": "${workspaceFolder}/models/30d-norad12-wijchen-[i-d(16, sigmoid)-d(1)]-[adam(1e-3)-epochs(1000)]-run1.h5"
+                // "MODEL": "${workspaceFolder}/models/step_function_test.csv"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "-p 2024"
+            ],
+            "jinja": true,
+            "presentation": {
+                "hidden": false,
+                "group": "2_tools",
+                "order": 3
+            }
+        },
+        {
+            "name": "Task allocation tester",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/tools/task_allocation_tester",
+            "program": "${workspaceFolder}/tools/task_allocation_tester/task_allocation_tester.py",
+            "console": "integratedTerminal",
+            "env": {
+                "OUTPUT": "${workspaceFolder}/models/step_function_test.csv"
+            },
+            "jinja": true,
+            "presentation": {
+                "hidden": false,
+                "group": "2_tools",
+                "order": 4
+            }
+        },
+        {
+            "name": "Step function generator",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/tools/step_function_generator",
+            "program": "${workspaceFolder}/tools/step_function_generator/step_function_generator.py",
+            "console": "integratedTerminal",
+            "env": {
+                "OUTPUT": "${workspaceFolder}/models/step_function_test.csv"
+            },
+            "jinja": true,
+            "presentation": {
+                "hidden": false,
+                "group": "2_tools",
+                "order": 5
+            }
+        },
+        {
+            "name": "TEST common: 'Messenger test'",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/build/native/tests/common/test_messenger",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/tests/build/native/tests/common",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "3_tests_1_common",
+                "order": 1
+            }
+        },
+        {
+            "name": "TEST common: 'Settings test'",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/build/native/tests/common/test_settings",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/tests/build/native/tests/common",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "3_tests_1_common",
+                "order": 2
+            }
+        },
+        {
+            "name": "TEST common: 'Types test'",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/build/native/tests/common/test_types",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/tests/build/native/tests/common",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "3_tests_1_common",
+                "order": 3
+            }
+        },
+        {
+            "name": "TEST launcher: 'Message queue test' + 'Module watcher test'",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/build/native/tests/launcher/test_launcher",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/tests/build/native/tests/launcher",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "3_tests_2_launcher",
+                "order": 1
+            }
+        },
+        {
+            "name": "TEST launcher: 'Local logger test'",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/build/native/tests/launcher/test_local_logger",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/tests/build/native/tests/launcher",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "3_tests_2_launcher",
+                "order": 2
+            }
+        },
+        {
+            "name": "TEST storage: 'Database creation test'",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/build/native/tests/storage/test_storage",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/tests/build/native/tests/storage",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "3_tests_3_storage",
+                "order": 1
+            }
+        },
+        {
+            "name": "TEST storage: 'Message handler test (SETTINGS)'",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/build/native/tests/storage/test_handler_settings",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/tests/build/native/tests/storage",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "3_tests_3_storage",
+                "order": 2
+            }
+        },
+        {
+            "name": "TEST storage: 'Message handler test (MSG_SET)'",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/build/native/tests/storage/test_handler_msg_set",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/tests/build/native/tests/storage",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "3_tests_3_storage",
+                "order": 3
+            }
+        },
+        {
+            "name": "TEST storage: 'Message handler test (MSG_DEL)'",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/build/native/tests/storage/test_handler_msg_del",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/tests/build/native/tests/storage",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "3_tests_3_storage",
+                "order": 4
+            }
+        },
+        {
+            "name": "TEST storage: 'Message handler test (MSG_GET)'",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/build/native/tests/storage/test_handler_msg_get",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/tests/build/native/tests/storage",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "3_tests_3_storage",
+                "order": 5
+            }
+        },
+        {
+            "name": "TEST collection: 'Data download test'",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/build/native/tests/collection/test_download_data",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/tests/build/native/tests",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "3_tests_4_collection",
+                "order": 1
+            }
+        }
+    ]
+}

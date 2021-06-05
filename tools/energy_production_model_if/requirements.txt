@@ -1,0 +1,4 @@
+flask
+pandas
+tensorflow
+keras

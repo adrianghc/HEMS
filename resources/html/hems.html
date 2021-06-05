@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>HEMS - Home Energy Management System</title>
+    </head>
+
+    <body>
+        <h1>HEMS - Home Energy Management System</h1>
+
+        <div style="margin-bottom: 30px;">
+            <!-- DYNAMIC_CONTENT_AREA -->
+        </div>
+
+        <hr>
+
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td><label for="station_number">Station number:</label></td>
+                    <td><input type="number" id="station_number" name="station_number" value="1"></td>
+                </tr>
+                <tr>
+                    <td><label for="station_interval">Station interval<br>(between 1 and 60, a divisor of 60):</label></td>
+                    <td valign="bottom"><input type="number" id="station_interval" name="station_interval" value="60" min="1" max="60"></td>
+                </tr>
+            </table>
+
+            <button type="submit" name="action" value="set_stations">Set interval for a weather station</button>
+        </form>
+
+        <hr>
+
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td><label for="start_time">Start time (format YYYY-MM-DD HH:MM:SS"):</label></td>
+                    <td><input type="text" id="start_time" name="start_time" value="2020-06-23 00:00:00"></td>
+                </tr>
+                <tr>
+                    <td><label for="end_time">End time (format YYYY-MM-DD HH:MM:SS"):</label></td>
+                    <td><input type="text" id="end_time" name="end_time" value="2020-09-23 00:00:00"></td>
+                </tr>
+            </table>
+
+            <button type="submit" name="action" value="download_weather">Download all weather data between start_time and end_time</button>
+            <button type="submit" name="action" value="download_energy_production">Download all energy production data between start_time and end_time</button>
+        </form>
+
+        <hr>
+
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td><label for="start_time">Start time (format YYYY-MM-DD HH:MM:SS"):</label></td>
+                    <td><input type="text" id="start_time" name="start_time" value="2020-06-30 00:00:00"></td>
+                </tr>
+            </table>
+
+            <button type="submit" name="action" value="get_energy_production_predictions">Get energy production predictions for a week beginning at start_time</button>
+        </form>
+
+        <hr>
+
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td><label for="id">id (0 for new appliance):</label></td>
+                    <td><input type="number" id="id" name="id" value="0"></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="rating">Rating:</label></td>
+                    <td><input type="number" id="rating" name="rating" value="0" step="any" min="0"></td>
+                </tr>
+                <tr>
+                    <td><label for="duty_cycle">Average duty cycle in hours:</label></td>
+                    <td><input type="number" id="duty_cycle" name="duty_cycle" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td><label for="schedules_per_week">Schedules per week<br>(0 if the appliance is not schedulable):</label></td>
+                    <td valign="bottom"><input type="number" id="schedules_per_week" name="schedules_per_week" value="0" min="0" max="255"></td>
+                </tr>
+            </table>
+
+            <button type="submit" name="action" value="set_appliance">Set appliance</button>
+        </form>
+
+        <hr>
+
+        <form action="" method="post">
+            <button type="submit" name="action" value="get_appliances">Get appliances</button>
+        </form>
+
+        <hr>
+
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td><label for="id">id (0 to delete all appliances):</label></td>
+                    <td><input type="number" id="id" name="id" value="0" min="0"></td>
+                </tr>
+            </table>
+
+            <button type="submit" name="action" value="del_appliances">Delete appliance(s)</button>
+        </form>
+
+        <hr>
+
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td><label for="start_time">Start time (format YYYY-MM-DD HH:MM:SS"):</label></td>
+                    <td><input type="text" id="start_time" name="start_time" value="2020-06-23 00:00:00"></td>
+                </tr>
+                <tr>
+                    <td><label for="order">Choose a task prioritization order:</label></td>
+                    <td>
+                        <select id="order" name="order">
+                            <option value="width">Decreasing width</option>
+                            <option value="height">Decreasing height</option>
+                            <option value="area">Decreasing area</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="heuristic">Choose an allocation heuristic:</label></td>
+                    <td>
+                        <select id="heuristic" name="heuristic">
+                            <option value="first">First fit</option>
+                            <option value="next">Next fit</option>
+                            <option value="best">Best fit</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <button type="submit" name="action" value="get_recommendations">Get task recommendations</button>
+        </form>
+    </body>
+
+</html>
